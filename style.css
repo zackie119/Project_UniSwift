@@ -1,0 +1,175 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+h4 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+img {
+    border-radius: 30px;
+}
+
+
+/* Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #0e7dda;
+    color: white;
+    padding: 10px 30px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;  /* Aligns items vertically */
+  gap: 20px; /* Adds spacing between text and image */
+  position: relative;
+  top: -10px;
+}
+
+.logo img {
+  border-radius: 50%; /* Makes the image round */
+}
+
+ul {
+    display: flex;
+    padding: 10px 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    color: white;
+    background: #100E09;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* Features */
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+
+.steps {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    padding: 30px 20px;
+    justify-content: space-around;
+}
+
+/* Testimonials */
+.testimonial {
+    text-align: center;
+    font-style: italic;
+    margin: 20px auto;
+    width: 60%;
+}
+
+/* Contact */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form input, form textarea, form button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.footer {
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 40px;
+
+}
+
+.store-section {
+    text-align: center; /* Centers text & buttons */
+    margin-top: 20px;
+}
+
+.store-section p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.store-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+}
+
+.store-buttons img {
+    height: 50px; /* Adjust the button size */
+    cursor: pointer;
+}
+
+
+
