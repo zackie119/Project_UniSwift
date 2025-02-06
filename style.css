@@ -2,7 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -12,50 +11,44 @@ body {
     background: #fff;
 }
 
-h2 {
+h2, h4 {
     text-align: center;
-    margin: 30px 0;
-}
-
-h4 {
-    text-align: center;
-    padding-top: 20px;
+    margin: 20px 0;
 }
 
 img {
     border-radius: 30px;
+    max-width: 100%;
+    height: auto;
 }
-
 
 /* Navigation */
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: #0e7dda;
     color: white;
-    padding: 10px 30px;
+    padding: 10px 20px;
+    flex-wrap: wrap;
 }
 
 header .logo {
   display: flex;
-  align-items: center;  /* Aligns items vertically */
-  gap: 20px; /* Adds spacing between text and image */
-  position: relative;
-  top: -10px;
+  align-items: center;
+  gap: 20px;
+  border-radius: 0%;
 }
 
 .logo img {
-  border-radius: 50%; /* Makes the image round */
-}
-
-ul {
-    display: flex;
-    padding: 10px 10px;
+    border-radius: 0px;
+    padding: 0;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    padding: 0;
 }
 
 nav ul li {
@@ -65,6 +58,34 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #0e7dda;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px;
+    }
+    nav ul.show {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+    }
 }
 
 /* Hero Section */
@@ -77,25 +98,21 @@ nav ul li a {
     background: #100E09;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    flex-wrap: wrap;
 }
 
 .hero-text {
     max-width: 50%;
 }
 
-.hero-text h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.cta-button {
-    display: inline-block;
-    background: #007bff;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin-top: 10px;
-    border-radius: 10px;
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        max-width: 100%;
+    }
 }
 
 /* Features */
@@ -105,16 +122,39 @@ nav ul li a {
     text-align: center;
     padding: 30px;
     border-radius: 30px;
+    flex-wrap: wrap;
 }
 
+.cta-button {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
 
+.feature {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+/* Steps */
 .steps {
-    text-align: center;
-    padding: 10px;
     display: flex;
+    justify-content: space-around;
     text-align: center;
     padding: 30px 20px;
-    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
 }
 
 /* Testimonials */
@@ -122,54 +162,35 @@ nav ul li a {
     text-align: center;
     font-style: italic;
     margin: 20px auto;
-    width: 60%;
+    width: 80%;
 }
 
 /* Contact */
 form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 45%;
     margin: auto;
 }
 
-form input, form textarea, form button {
-    margin: 10px 0;
-    padding: 10px;
-    width: 100%;
-}
-
+/* Footer */
 .footer {
     background: #007bff;
     color: white;
-    text-decoration: none;
     text-align: center;
-    border-radius: 10px;
     padding: 20px 40px;
-
 }
 
-.store-section {
-    text-align: center; /* Centers text & buttons */
-    margin-top: 20px;
-}
-
-.store-section p {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
+/* Download Section */
 .store-buttons {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Space between buttons */
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.store-buttons img {
-    height: 50px; /* Adjust the button size */
-    cursor: pointer;
+@media (max-width: 768px) {
+    .store-buttons img {
+        height: 40px;
+    }
 }
-
-
-
